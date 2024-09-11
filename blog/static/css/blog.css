@@ -1,0 +1,94 @@
+/* Основные настройки */
+body {
+    font-family: 'Lobster', cursive;
+    padding-left: 15px;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Заголовок страницы */
+h1 a {
+    color: #FCA205;
+    text-decoration: none;
+}
+
+h1 a:hover {
+    color: #e68a00;
+}
+
+.page-header {
+    background-color: #ff9400;
+    color: #ffffff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+}
+
+.page-header h1 {
+    font-size: 36pt;
+    margin: 0;
+}
+
+/* Основной контент */
+.content {
+    margin: 0 auto;
+    max-width: 960px;
+}
+
+.post {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.post h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.date {
+    color: #828282;
+    font-size: 14px;
+}
+
+/* Формы */
+.post-form textarea, .post-form input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.post-form textarea {
+    height: 150px;
+}
+
+/* Верхнее меню */
+.top-menu {
+    color: #ffffff;
+    font-size: 20px;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.top-menu:hover {
+    color: #e68a00;
+}
+
+/* Адаптивные стили */
+@media (max-width: 768px) {
+    .content {
+        margin: 0 15px;
+    }
+
+    .page-header {
+        padding: 15px;
+    }
+
+    .top-menu {
+        font-size: 18px;
+        margin-right: 10px;
+    }
+}
