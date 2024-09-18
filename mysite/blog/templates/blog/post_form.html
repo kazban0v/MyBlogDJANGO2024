@@ -1,0 +1,21 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Новый Пост</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+    <div class="container">
+        <h1>Create a New Post</h1>
+
+        <form method="POST" class="post-form">
+            {% csrf_token %}
+            {{ form.as_p }}
+            <button type="submit" class="btn">Сохранить</button>
+        </form>
+
+        <a href="{% url 'post_list' %}" class="btn btn-secondary">Назад</a>
+    </div>
+</body>
+</html>

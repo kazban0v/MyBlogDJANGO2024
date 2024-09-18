@@ -1,0 +1,16 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{{ post.title }}</title>
+    <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+</head>
+<body>
+    <h1>{{ post.title }}</h1>
+    <p>Published on: {{ post.published_date }}</p>
+    <div>
+        {{ post.text|linebreaksbr }}
+    </div>
+    <a href="{% url 'post_list' %}">Назад</a>
+</body>
+</html>
