@@ -37,7 +37,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'blog','tasks',
+    'blog',  # ваше приложение блога
+    'tasks',  # добавьте эту строку
 ]
 
 MIDDLEWARE = [
